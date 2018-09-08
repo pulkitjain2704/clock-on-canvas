@@ -2,16 +2,14 @@
 <html>
 <body>
 
-<div class="container">
 <div class="row">
-<div class="col-sm-6 col-md-12">
-  <canvas id="canvas" width="400" height="400"
+  <div class="col-xs-2 col-sm-2"></div>
+  <div class="col-xs-12 col-sm-12">
+  <canvas id="canvas" width="300" height="300"
 style="background-image: url(Firewatch-iPhone-Wallpaper-green_RjnpE9b.jpg); background-size:100% 100%;">
 </canvas>
-</div> 
 </div>
-</div>
-
+  <div class="col-xs-2 col-sm-2"></div>
 <script>
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
@@ -37,7 +35,6 @@ function drawFace(ctx, radius) {
 
   grad = ctx.createRadialGradient(0,0,radius*0.95, 0,0,radius*1.05);
   grad.addColorStop(0, '#333');
-  grad.addColorStop(0.5, 'white');
   grad.addColorStop(1, '#333');
   ctx.strokeStyle = grad;
   ctx.lineWidth = radius*0.1;
